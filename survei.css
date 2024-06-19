@@ -1,0 +1,85 @@
+/* Body and HTML styling to cover full viewport with background */
+body, html {
+    height: 100%; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-image: url('assets/img/voice.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Keep background fixed on scroll */
+}
+
+/* Container styling */
+.container {
+    border: 2px solid #0d6efd; /* Primary color border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    max-width: 600px; /* Maximum width of the form */
+    width: 100%; /* Ensure form takes up full available width within the max-width */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+header {
+    border-bottom: 2px solid #0d6efd; /* Bottom border for header */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form field borders */
+.form-control, .form-select {
+    border: 1px solid #0d6efd; /* Primary color border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px; /* Inner padding for inputs */
+}
+
+/* Radio button and textarea styling */
+.form-check-input {
+    border: 1px solid #0d6efd; /* Primary color border */
+}
+
+.textarea {
+    border: 1px solid #0d6efd; /* Primary color border */
+}
+
+/* Button styling */
+.btn-primary {
+    border: 2px solid #0d6efd; /* Primary color border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #0d6efd; /* Primary color background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for button */
+}
+
+/* Results section styling */
+#hasil-survei {
+    border-top: 2px solid #0d6efd; /* Top border for results section */
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+#hasil-list {
+    list-style-type: none; /* Remove list styling */
+    padding: 0; /* Remove default padding */
+}
+
+#hasil-list li {
+    border-bottom: 1px solid #0d6efd; /* Bottom border for list items */
+    padding: 10px 0; /* Padding for list items */
+    margin-bottom: 10px;
+}
+
+/* Add additional styling as needed for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-control, .form-select, .btn-primary {
+        padding: 8px;
+    }
+}

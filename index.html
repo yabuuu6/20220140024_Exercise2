@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Interaktif - Survei</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1 class="display-4 text-primary">A Silent Voice</h1>
+            <p class="lead">Filmnya sebuah kisah masa depan di mana seorang anak laki-laki berusia dua belas tahun tumbuh menjadi remaja mencoba untuk menebus rasa sakit yang dia timbulkan pada seorang gadis tunarungu karena penindasannya yang tanpa ampun..</p>
+        </header>
+
+        <div class="content">
+            <div class="media-container mb-4">
+                <h2 class="h4">Audio: Musik</h2>
+                <div class="ratio ratio-4x3">
+                    <audio controls class="w-100">
+                        <source src="assets/audio/a_silent.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung elemen audio.
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="media-container mb-4">
+                <h2 class="h4">Video: Trailer A Silent Voice</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe class="w-100" src="https://www.youtube.com/embed/nfK6UgLra7g" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="media-container mb-4">
+                <h2 class="h4">Gambar: A Silent Voice</h2>
+                <div class="ratio ratio-4x3">
+                    <img src="assets/img/silent.jpg" alt="Langkah-langkah Pengisian Survei" class="img-fluid rounded">
+                </div>
+            </div>
+            
+
+            <div class="survey-button">
+                <button id="mulai-survei">Mulai Survei</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

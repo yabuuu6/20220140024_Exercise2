@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survei Kepuasan Pengguna</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="survei.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1 class="display-4 text-primary">Survei Kepuasan Pengguna</h1>
+            <p class="lead">Mohon berikan Pengalaman anda tentang Film A Silent Voice.</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama:</label>
+                <input type="text" class="form-control" id="nama" name="nama" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="tanggal-lahir" class="form-label">Tanggal Lahir:</label>
+                <input type="date" class="form-control" id="tanggal-lahir" name="tanggal-lahir" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="jenis-kelamin" class="form-label">Jenis Kelamin:</label>
+                <select class="form-select" id="jenis-kelamin" name="jenis-kelamin" required>
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                    <option value="lainnya">Prefer tidak disebutkan</option>
+                </select>
+            </div>
+
+            <fieldset class="mb-3">
+                <legend class="form-label">Seberapa puas Dengan Film A Silent Voice ?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="puas" value="puas" required>
+                    <label class="form-check-label" for="puas">
+                        Puas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="cukup_puas" value="cukup_puas">
+                    <label class="form-check-label" for="cukup_puas">
+                        Cukup Puas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="tidak_puas" value="tidak_puas">
+                    <label class="form-check-label" for="tidak_puas">
+                        Tidak Puas
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="mb-3">
+                <label for="feedback" class="form-label">Komentar Film:</label>
+                <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Kirim Survei</button>
+        </form>
+
+        <!-- Area untuk menampilkan hasil input -->
+        <div id="hasil-survei" class="mt-4">
+            <h3>Hasil Survei</h3>
+            <ul id="hasil-list"></ul>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="survei.js"></script>
+</body>
+</html>
